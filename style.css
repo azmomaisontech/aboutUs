@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f9f9f9;
+  position: relative;
+}
+
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.left-side {
+  position: fixed;
+  left: 0;
+  top: 20vh;
+}
+
+/* Section : Main */
+main#main {
+  padding: 3rem 0 2rem 0;
+  text-align: center;
+}
+
+main#main h2 {
+  font-weight: bold;
+  line-height: 54px;
+}
+
+/* Section : Company */
+section#company_section {
+  padding: 2rem 0;
+  /* min-height: 50vh; */
+}
+
+section#company_section .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  align-items: center;
+}
+
+section#company_section .image {
+  background: #c4c4c4;
+  height: 400px;
+}
+
+section#company_section .content h3 {
+  font-weight: bold;
+  line-height: 27px;
+  margin-bottom: 1rem;
+}
+
+section#company_section .content h5 {
+  line-height: 37px;
+}
+
+/* Section : Mission */
+
+section#mission_section {
+  padding: 3rem 0;
+}
+
+section#mission_section h3 {
+  font-weight: bold;
+  line-height: 52px;
+  text-align: center;
+}
+
+section#mission_section .grid-container {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+
+section#mission_section .box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+section#mission_section .sect1 img {
+}
+section#mission_section .sect2 img {
+}
+section#mission_section .sect3 img {
+}
+
+/* Section: Design */
+section#design {
+  height: 30vh;
+  background: url("./assets/image/section.png") center center/cover;
+}
