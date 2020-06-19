@@ -2,7 +2,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #f9f9f9;
+  background: #ffffff;
   position: relative;
 }
 
@@ -14,27 +14,40 @@ body {
 }
 
 .container {
-  max-width: 1200px;
-  padding: 0 2rem;
+  max-width: 100%;
   margin: auto;
-  overflow: hidden;
 }
 
-.left-side {
-  position: fixed;
-  left: 0;
-  top: 20vh;
+.container h2 {
+  font-family: Gilroy-Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px !important;
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin: 0 auto;
 }
 
-/* Section : Main */
+.container p {
+  width: 90%;
+  margin: 0 auto;
+  font-family: Gilroy-Medium;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #000000;
+}
+
 main#main {
   padding: 3rem 0 2rem 0;
   text-align: center;
-}
-
-main#main h2 {
-  font-weight: bold;
-  line-height: 54px;
 }
 
 /* Section : Company */
@@ -44,25 +57,44 @@ section#company_section {
 }
 
 section#company_section .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  align-items: center;
+  display: block;
 }
 
 section#company_section .image {
   background: #c4c4c4;
-  height: 400px;
+  width: 280px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+section#company_section .content {
+  width: 80%;
+  margin: 0 auto;
 }
 
 section#company_section .content h3 {
+  font-family: Gilroy-Bold;
+  font-style: normal;
   font-weight: bold;
-  line-height: 27px;
-  margin-bottom: 1rem;
+  font-size: 32px;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  
+  color: #000000;
+  margin-top: 40px;
 }
 
 section#company_section .content h5 {
-  line-height: 37px;
+  font-family: Gilroy-Medium;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 43px;
+  
+  margin-top: 30px;
+  letter-spacing: -0.02em;
+  color: #000000;
 }
 
 /* Section : Mission */
@@ -72,12 +104,20 @@ section#mission_section {
 }
 
 section#mission_section h3 {
+
+  font-family: Gilroy-Bold;
+  font-style: normal;
   font-weight: bold;
-  line-height: 52px;
+  font-size: 32px;
+  line-height: 45px;
   text-align: center;
+  width: 90%;
+
+  color: #191919;
+  margin: 0 auto;
 }
 
-section#mission_section .grid-container {
+/* section#mission_section .grid-container {
   padding: 3rem 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -88,7 +128,273 @@ section#mission_section .box {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
+} */
+
+@media screen and (min-width: 760px) and (max-width: 900px) {
+  .container h2 {
+    font-size: 35px;
+    line-height: 40px !important;
+  }
+  
+  .container p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  
+  section#company_section .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  
+  section#company_section .image {
+    background: #c4c4c4;
+    width: 280px;
+    height: 320px;
+    margin: 0 auto;
+  }
+  
+  section#company_section .content {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  section#company_section .content h3 {
+    font-size: 32px;
+    text-align: right;
+    color: #000000;
+    margin-top: 40px;
+  }
+  
+  section#mission_section h3 {
+    font-size: 35px;
+  }
+  
 }
+
+@media screen and (min-width: 900px) and (max-width: 1250px) {
+  .container h2 {
+    width: 534px;
+    height: 109px;
+  
+    font-size: 52px;
+    line-height: 54px !important;
+    margin: 0 auto;
+  }
+  
+  .container p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+  
+  section#company_section .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  
+  section#company_section .image {
+    width: 320px;
+    height: 350px;
+    margin: 0 auto;
+  }
+
+  
+  
+  section#company_section .content h3 {
+    font-size: 32px;
+    text-align: right;
+    color: #000000;
+    margin-top: 40px;
+  }
+  
+  section#company_section .content h5 {
+    font-size: 22px;
+    line-height: 42px;
+    
+    margin-top: 32px;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+
+  section#mission_section h3 {
+    width: 746px;
+    height: 104px;
+  
+    font-family: Gilroy-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+  
+    color: #191919;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .container h2 {
+    width: 534px;
+    height: 109px;
+  
+    font-size: 52px;
+    line-height: 54px !important;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+  
+    margin: 0 auto;
+  }
+  
+  .container p {
+    font-family: Gilroy-Medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+  
+    margin-top: 24px;
+    text-align: center;
+    letter-spacing: -0.02em;
+  
+    color: #000000;
+  }
+  
+  /* .left-side {
+    position: fixed;
+    left: 0;
+    top: 20vh;
+  } */
+  
+  /* Section : Main */
+  main#main {
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+  }
+  
+  main#main h2 {
+    font-weight: bold;
+    line-height: 54px;
+  }
+  
+  /* Section : Company */
+  section#company_section {
+    padding: 2rem 0;
+    /* min-height: 50vh; */
+  }
+  
+  section#company_section .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  section#company_section .content {
+    width: 77%;
+    margin: 0px;
+  }
+  
+  section#company_section .image {
+    background: #c4c4c4;
+    width: 355px;
+    height: 403px;
+    margin: 0 auto;
+  }
+  
+  
+  section#company_section .content h3 {
+    font-family: Gilroy-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+    text-align: right;
+  
+    color: #000000;
+  }
+  
+  section#company_section .content h5 {
+    font-family: Gilroy-Medium;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 47px;
+    
+    margin-top: 52px;
+    letter-spacing: -0.02em;
+    color: #000000;
+  }
+  
+  /* Section : Mission */
+  
+  section#mission_section {
+    padding: 3rem 0;
+  }
+  
+  section#mission_section h3 {
+    width: 746px;
+    height: 104px;
+  
+    font-family: Gilroy-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+  
+    color: #191919;
+    margin: 0 auto;
+  }
+  
+}
+
+.gallery__container {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 5em;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.gallery__item--1 {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.gallery__item--2 {
+ 
+}
+
+.gallery__item--3 {
+  grid-row: 1/3;
+}
+
+.gallery__item--4 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.gallery__item--5 {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.gallery__item--6 {
+  grid-row: 2/3;
+  grid-column: 3;
+}
+
 
 section#mission_section .sect1 img {
 }
@@ -97,8 +403,3 @@ section#mission_section .sect2 img {
 section#mission_section .sect3 img {
 }
 
-/* Section: Design */
-section#design {
-  height: 30vh;
-  background: url("./assets/image/section.png") center center/cover;
-}
