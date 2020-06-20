@@ -5,109 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="Description" content="Enter your description here" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./header-footer.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
     <title>About Us</title>
-    <script src="https://kit.fontawesome.com/25fffa082a.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <section id="header">
-      <!-- write header codes here, delete this comment when done -->
-      <header>
-        <nav>
-          <div class="container nav">
-            <div class="nav__brand">
-              <a href="#" class="nav__brand__logo">MyCustomer</a>
-            </div>
-            <div class="nav__menu">
-              <div class="menu__container">
-                <ul class="menu__list">
-                  <li class="menu__list__item"><a href="index.html" class="menu__list__link">Home</a></li>
-                  <li class="menu__list__item"><a href="about.html" class="menu__list__link">About</a></li>
-                  <li class="menu__list__item"><a href="#" class="menu__list__link">FAQ</a></li>
-                  <li class="menu__list__item"><a href="contact-us.html" class="menu__list__link">Contact Us</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="nav__button__container">
-              <button class="nav__button ">Log In</button>
-              <button class="nav__button btn-nav-active">Sign Up</button>
-            </div>
-            <div class="hamburger-container">
-              <div class="hamburger__menu">
-                <div class="menubar menu-bar-one"></div>
-                <div class="menubar menu-bar-two"></div>
-                <div class="menubar menu-bar-three"></div>
-              </div>
-            </div>
-          </div>
-          <div id="mobile-menu" class="mobile-menu">
-            <div class="close-mobile-menu">
-              <i class="fas fa-times"></i>
-            </div>
-            <div class="mobile__nav__menu">
-              <div class="mobile__menu__container">
-                <ul class="mobile__menu__list">
-                  <li class="mobile__menu__list__item">
-                    <a href="index.html" class="mobile__menu__list__link">Home</a>
-                  </li>
-                  <li class="mobile__menu__list__item">
-                    <a href="about.html" class="mobile__menu__list__link">About</a>
-                  </li>
-                  <li class="mobile__menu__list__item"><a href="#" class="mobile__menu__list__link">FAQ</a></li>
-                  <li class="mobile__menu__list__item">
-                    <a href="contact-us.html" class="mobile__menu__list__link">Contact Us</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="mobile__nav__button__container">
-                <button class="mobile__nav__button">Log In</button>
-                <button class="mobile__nav__button">Sign Up</button>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </header>
-    </section>
-    <div class="left-side">
+    <nav id="navbar">
+      <div class="container">
+        <h2>MyCustomer</h2>
+        <ul class="nav-menu">
+          <li class="nav-list"><a href="">Home</a></li>
+          <li class="nav-list"><a href="">About</a></li>
+          <li class="nav-list"><a href="">FAQ</a></li>
+          <li class="nav-list"><a href="">Contact Us</a></li>
+          <li class="nav-list"><a href="">Login</a></li>
+          <li class="nav-list-special"><a href="">Sign Up</a></li>
+        </ul>
+        <div class="burger">
+          <span class="line"></span>
+          <span class="line blue"></span>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="left-side">
       <img src="./assets/image/Rectangle33.png" alt="Traingle" />
       <img src="./assets/image/Rectangle34.png" alt="Traingle" />
     </div>
     <div class="right-side">
       <img src="./assets/image/Rectangle33.png" alt="Traingle" />
       <img src="./assets/image/Rectangle34.png" alt="Traingle" />
-    </div>
+    </div> -->
     <main id="main">
       <!--start writing your codes from here-->
       <div class="container">
-        <h2>Helping small business collect money</h2>
-        <h5>we help small business collect Money and automatically send them reminders when it's time to pay.</h5>
+        <div class="grid-container">
+          <div class="content-left">
+            <h2>
+              <span class="text-blue">Helping </span> small business collect <span class="text-yellow">money </span>
+            </h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsam laudantium sint aspernatur vitae
+              nisi fugiat nesciunt quae quibusdam sed, explicabo voluptatibus! Fuga ducimus magnam, culpa error, magni
+              aliquid, modi labore cum ab possimus suscipit est. Error expedita recusandae assumenda consequuntur vel
+              animi nulla modi, blanditiis illo voluptatem perferendis commodi.
+            </p>
+          </div>
+          <img src="./assets/image/money.jpg" alt="Money" />
+        </div>
       </div>
     </main>
     <section id="company_section">
       <div class="container">
         <div class="grid-container">
-          <div class="image">
-            <img src="./assets/image/holding.jpg" alt="HANDS" />
-          </div>
+          <img src="./assets/image/holding.jpg" alt="Market woman" />
           <div class="content">
-            <h3>Our Company</h3>
-            <h5>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit egestas enim massa urna varius. Cursus etiam
-              sem nec enim et vitae.
-            </h5>
+            <h2><span class="text-yellow">Our </span> Company</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, incidunt eligendi non beatae iste
+              architecto id aliquid quod, voluptatem iure fugiat aspernatur velit! Officiis rem quod ab deleniti a
+              architecto eveniet illo nostrum. Omnis obcaecati reprehenderit iste hic architecto sunt ad enim aperiam
+              expedita fugit cupiditate sit, nesciunt, et voluptatibus quos eaque! Consequatur eligendi voluptates
+              architecto totam, magnam sed doloribus odit in necessitatibus, consequuntur error fugiat dignissimos
+              dolore obcaecati nulla!
+            </p>
           </div>
         </div>
       </div>
     </section>
     <section id="mission_section">
       <div class="container">
-        <h3>We are on a mission to help the world to be a better place</h3>
+        <h2><span class="text-blue">Our </span> Mission</h2>
+        <p>We are on a mission to help the world to be a better place</p>
         <div class="grid-container">
           <div class="box sect1">
             <img class="first slide-in from-left" src="./assets/image/photo.png" alt="People" />
@@ -125,35 +92,20 @@
       </div>
     </section>
     <section id="design"></section>
-    <section id="footer">
-            <footer>
-              <div class="footer__container">
-                <div class="row">
-                  <div class="col-lg-6 footer_left">
-                    <div class="footer__brand__container">
-                      <p class="footer__brand">MyCustomer</p>
-                      <a href="#" class="footer__brand__tagline">customerpay.me</a>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 footer_right">
-                    <div class="footer__menu">
-                      <div class="footer__menu__container">
-                        <ul class="footer__menu__list">
-                          <li class="footer__menu__list__item"><a href="index.html" class="footer__menu__list__link">Home</a></li>
-                          <li class="footer__menu__list__item"><a href="about.html" class="footer__menu__list__link">About</a></li>
-                          <li class="footer__menu__list__item"><a href="#" class="footer__menu__list__link">FAQ</a></li>
-                          <li class="footer__menu__list__item"><a href="contact-us.html" class="footer__menu__list__link">Contact Us</a></li>
-                        </ul>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </footer>
-          </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="./header-footer.js"></script>
-    <script src="./app.js"></script>
+    <footer id="footer">
+      <div class="container">
+        <div class="left">
+          <h2>MyCustomer</h2>
+          <p>customerpay.me</p>
+        </div>
+        <ul>
+          <li class="nav-list"><a href="">Home</a></li>
+          <li class="nav-list"><a href="">About</a></li>
+          <li class="nav-list"><a href="">FAQ</a></li>
+          <li class="nav-list"><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>
