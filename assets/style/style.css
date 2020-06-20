@@ -163,7 +163,8 @@ section#mission_section p {
   text-align: center;
 }
 
-section#mission_section p.mobile_design {
+section#mission_section p.mobile_design,
+section#mission_section .mobile_image {
   display: none;
 }
 
@@ -369,27 +370,26 @@ footer#footer ul li.nav-list:hover a {
     padding: 5rem 0;
   }
 
-  section#mission_section p.mobile_large {
-    font-weight: bold;
-    font-size: 1rem;
+  section#mission_section h2 {
+    margin-bottom: 1.5rem;
   }
 
-  section#mission_section p.mobile_design {
+  section#mission_section p.mobile_design,
+  section#mission_section .mobile_image {
     display: block;
+  }
+
+  section#mission_section .mobile_image {
+    width: 100%;
+  }
+
+  #image0 {
+    border: 1px solid red;
   }
 
   section#mission_section .grid-container {
     display: none;
   }
-
-  /* section#mission_section .sect1 img.first,
-  section#mission_section .sect1 img.second,
-  section#mission_section .sect2 img.third,
-  section#mission_section .sect2 img.fourth,
-  section#mission_section .sect3 img.fifth,
-  section#mission_section .sect3 img.sixth {
-    display: none;
-  } */
 }
 
 @media (max-width: 700px) {
