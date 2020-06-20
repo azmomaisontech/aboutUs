@@ -10,16 +10,75 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/header-footer.css" />
+    <link rel="stylesheet" href="./header-footer.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>About Us</title>
     <script src="https://kit.fontawesome.com/25fffa082a.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <section id="header">
-      <!-- do not edit/write, i'llgive you header codes to paste here later -->
+      <!-- write header codes here, delete this comment when done -->
+      <header>
+        <nav>
+          <div class="container nav">
+            <div class="nav__brand">
+              <a href="#" class="nav__brand__logo">MyCustomer</a>
+            </div>
+            <div class="nav__menu">
+              <div class="menu__container">
+                <ul class="menu__list">
+                  <li class="menu__list__item"><a href="index.html" class="menu__list__link">Home</a></li>
+                  <li class="menu__list__item"><a href="about.html" class="menu__list__link">About</a></li>
+                  <li class="menu__list__item"><a href="#" class="menu__list__link">FAQ</a></li>
+                  <li class="menu__list__item"><a href="contact-us.html" class="menu__list__link">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav__button__container">
+              <button class="nav__button ">Log In</button>
+              <button class="nav__button btn-nav-active">Sign Up</button>
+            </div>
+            <div class="hamburger-container">
+              <div class="hamburger__menu">
+                <div class="menubar menu-bar-one"></div>
+                <div class="menubar menu-bar-two"></div>
+                <div class="menubar menu-bar-three"></div>
+              </div>
+            </div>
+          </div>
+          <div id="mobile-menu" class="mobile-menu">
+            <div class="close-mobile-menu">
+              <i class="fas fa-times"></i>
+            </div>
+            <div class="mobile__nav__menu">
+              <div class="mobile__menu__container">
+                <ul class="mobile__menu__list">
+                  <li class="mobile__menu__list__item">
+                    <a href="index.html" class="mobile__menu__list__link">Home</a>
+                  </li>
+                  <li class="mobile__menu__list__item">
+                    <a href="about.html" class="mobile__menu__list__link">About</a>
+                  </li>
+                  <li class="mobile__menu__list__item"><a href="#" class="mobile__menu__list__link">FAQ</a></li>
+                  <li class="mobile__menu__list__item">
+                    <a href="contact-us.html" class="mobile__menu__list__link">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mobile__nav__button__container">
+                <button class="mobile__nav__button">Log In</button>
+                <button class="mobile__nav__button">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
     </section>
     <div class="left-side">
+      <img src="./assets/image/Rectangle33.png" alt="Traingle" />
+      <img src="./assets/image/Rectangle34.png" alt="Traingle" />
+    </div>
+    <div class="right-side">
       <img src="./assets/image/Rectangle33.png" alt="Traingle" />
       <img src="./assets/image/Rectangle34.png" alt="Traingle" />
     </div>
@@ -27,13 +86,15 @@
       <!--start writing your codes from here-->
       <div class="container">
         <h2>Helping small business collect money</h2>
-        <p>we help small business collect Money and automatically send them reminders when it's time to pay.</p>
+        <h5>we help small business collect Money and automatically send them reminders when it's time to pay.</h5>
       </div>
     </main>
     <section id="company_section">
       <div class="container">
         <div class="grid-container">
-          <div class="image"></div>
+          <div class="image">
+            <img src="./assets/image/holding.jpg" alt="HANDS" />
+          </div>
           <div class="content">
             <h3>Our Company</h3>
             <h5>
@@ -49,27 +110,50 @@
         <h3>We are on a mission to help the world to be a better place</h3>
         <div class="grid-container">
           <div class="box sect1">
-            <img src="./assets/image/photo.png" alt="People" />
-            <img src="./assets/image/photo3.png" alt="People" />
+            <img class="first slide-in from-left" src="./assets/image/photo.png" alt="People" />
+            <img class="second slide-in from-right" src="./assets/image/photo3.png" alt="People" />
           </div>
           <div class="box sect2">
-            <img src="./assets/image/photo1.png" alt="People" />
-            <img src="./assets/image/photo4.png" alt="People" />
+            <img class="third slide-in from-left" src="./assets/image/photo1.png" alt="People" />
+            <img class="fourth slide-in from-right" src="./assets/image/photo4.png" alt="People" />
           </div>
           <div class="box sect3">
-            <img src="./assets/image/photo2.png" alt="People" />
-            <img src="./assets/image/photo5.png" alt="People" />
+            <img class="fifth slide-in from-left" src="./assets/image/photo2.png" alt="People" />
+            <img class="sixth slide-in from-right" src="./assets/image/photo5.png" alt="People" />
           </div>
         </div>
       </div>
     </section>
     <section id="design"></section>
     <section id="footer">
-      <!-- do not edit/write here, footer will come in later as well-->
-    </section>
+            <footer>
+              <div class="footer__container">
+                <div class="row">
+                  <div class="col-lg-6 footer_left">
+                    <div class="footer__brand__container">
+                      <p class="footer__brand">MyCustomer</p>
+                      <a href="#" class="footer__brand__tagline">customerpay.me</a>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 footer_right">
+                    <div class="footer__menu">
+                      <div class="footer__menu__container">
+                        <ul class="footer__menu__list">
+                          <li class="footer__menu__list__item"><a href="index.html" class="footer__menu__list__link">Home</a></li>
+                          <li class="footer__menu__list__item"><a href="about.html" class="footer__menu__list__link">About</a></li>
+                          <li class="footer__menu__list__item"><a href="#" class="footer__menu__list__link">FAQ</a></li>
+                          <li class="footer__menu__list__item"><a href="contact-us.html" class="footer__menu__list__link">Contact Us</a></li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="assets/js/header-footer.js"></script>
+    <script src="./header-footer.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
